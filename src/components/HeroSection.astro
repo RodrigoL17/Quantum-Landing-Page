@@ -1,0 +1,23 @@
+---
+interface Props {
+    coversStyles: string;
+    sectionStyles: string;
+}
+
+const fadeAnimation = "animate-fade animate-duration-[1200ms] delay-300 animate-ease-in-out"
+const shakeAnimation = "animate-shake animate-duration-[1500ms] animate-ease-linear animate-fill-both"
+
+const {coversStyles, sectionStyles} = Astro.props
+---
+
+<section class={`text-white ${sectionStyles}`}>
+    <article class="absolute flex flex-col items-center h-full w-full justify-around px-10">
+        <p class={`uppercase text-xl font-[600] ${fadeAnimation}`}>Belen Vitullo</p>
+        <div class={`${fadeAnimation}`}>
+            <h1 class="text-[2.5rem] uppercase leading-9"><span class="font-secondary text-[7rem]">Q</span>uantum</h1>
+            <p class={`italic text-right mr-2 text-2xl leading-none ${shakeAnimation}`}>Mentoring 1:1</p>
+        </div>
+        <a class={`underline underline-offset-2 text-lg py-2 px-6 border-[#513016] border-2 bg-[#513016]/30 ${fadeAnimation}`} href="#learn-more">Learn more</a>
+    </article>
+    <img class={coversStyles} src="/1.png" alt="hero section cover">
+</section>

@@ -1,0 +1,32 @@
+---
+interface Props {
+  coversStyles: string;
+  sectionStyles: string;
+}
+
+const { coversStyles, sectionStyles } = Astro.props;
+---
+
+<section id="learn-more" class={`text-[#89674c] ${sectionStyles}`}>
+  <article class="absolute flex flex-col items-center h-full w-full justify-around px-10 text-xl">
+    <p class="font-extrabold">¿Sabes porqué hablo de Salto Cuántico?</p>
+
+    <p>
+      Porque no es un mero cambio de mindset lo que se requiere para crear la
+      vida de puta madre que te encantaría tener.
+    </p>
+    <p>
+      Lo que este salto te pide es que renuncies y dueles todo lo que ya no es
+      parte de tu nueva versión.
+    </p>
+    <p>
+      <span
+        >Y este es el “lado B” al que esta mentoría viene a brindarte su
+        contribución.</span
+      > Abrazando a ese ego que va a percibir todo este movimiento como amenza,
+      vos y yo trabajaremos codo a codo en crear hábitos que sean amables y
+      funcionales para ti.
+    </p>
+  </article>
+  <img class={coversStyles} src="/3.png" alt="background cover" />
+</section>

@@ -1,0 +1,15 @@
+---
+interface Props {
+    coversStyles: string;
+    sectionStyles: string;
+}
+
+const {sectionStyles, coversStyles} = Astro.props;
+---
+<section class={`${sectionStyles}`}>
+    <article class="absolute w-full h-full text-center text-white flex flex-col gap-10 justify-center items-center text-4xl italic px-10">
+        <p>¿Tu corazón se enciende con esta propuesta?</p>
+        <p>¿Será esta la señal que le estabas pidiendo al Universo?</p>
+    </article>
+    <img class={`${coversStyles}`} src="/6.png" alt="background cover">
+</section>

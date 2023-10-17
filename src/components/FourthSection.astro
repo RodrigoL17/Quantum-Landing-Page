@@ -1,0 +1,37 @@
+---
+interface Props {
+  coversStyles: string;
+  sectionStyles: string;
+}
+
+const { coversStyles, sectionStyles } = Astro.props;
+---
+
+<section class={`${sectionStyles}`}>
+  <article
+    class="absolute flex flex-col h-full w-full justify-around px-10 text-xl font-bold text-white backdrop-blur"
+  >
+    <p>
+      El éxito va a residir en que tu puedas crear tus propias fórmulas para
+      sostener y seguir dando saltos cada vez que tu vida te lo pida.
+    </p>
+    <div class="flex flex-col gap-4">
+      <p>Y para ello, es clave que:</p>
+      <ul class="flex flex-col gap-2">
+        <li>✨ Reconozcas tu DON</li>
+        <li>
+          ✨ Tomes hábitos que se alineen a la frecuencia de la vida que deseas
+        </li>
+        <li>
+          ✨ Te hagas cargo de tu poder y lo compartas con el resto del mundo.
+        </li>
+      </ul>
+    </div>
+    <p class="text-3xl text-center">¿Estás comprometida con crear la vida que te gustaría vivir?</p>
+  </article>
+  <img
+    class={`${coversStyles} bg-white/20`}
+    src="/4.png"
+    alt="background cover"
+  />
+</section>
