@@ -11,11 +11,28 @@ const { title } = Astro.props;
 <html lang="es-AR">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="" />
+		<link rel="icon" type="image/webp" href="favicon.webp" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Sesión de facilitación 1:1 para darle luz a nuestras sombras"/>
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content="Descubre el poder transformador de Quantum Mentoring 1:1 con Belén Vitullo. ¿Sientes la llamada para crear una vida extraordinaria pero te faltan herramientas? Este mentoring te guiará para liberarte de autoboicoteo y excusas." />
+		<meta property="og:image" content="/OGImage.webp" />
+		<meta property="og:alt" content="Quantum Mentoring Cover" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:site_name" content="Quantum Mentoring">
+		<meta property="og:locale" content="es_AR">
+		<meta property="og:locale:alternate" content="es_ES">
+
+
+		<meta name="author" content="Belen Vitullo" />
+		<meta name="description" content="Descubre el poder transformador de Quantum Mentoring 1:1 con Belén Vitullo. ¿Sientes la llamada para crear una vida extraordinaria pero te faltan herramientas? Este mentoring te guiará para liberarte de autoboicoteo y excusas. Con técnicas personalizadas, aprenderás a abrazar cambios profundos, encontrar tu don, y compartir tu auténtico poder. Diseñado para almas valientes en busca de evolución. Reserva tu sesión gratuita y descubre el camino hacia tu mejor versión."/>
+		<meta name="keywords" content="Quantum Mentoring, Mentoría Personalizada, Desarrollo Personal, Transformación de Vida, Empoderamiento Personal, Crecimiento Interior, Salto Cuántico, Autoconfianza, Despertar Personal">
+
+		<meta name="theme-color" content="#ae9490">
+		<meta name="robots" content="index, follow">
 		<title>{title}</title>
 		<ViewTransitions/>
 	</head>
