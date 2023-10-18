@@ -4,5 +4,6 @@
     "name": "Quantum Mentoring",
     "short_name": "Quantum Mentoring",
     "categories": ["health", "lifestyle", "medical", "productivity"],
-    "description": "Quantum Mentoring - 1:1 Mentoring to help you achive your goals"
+    "description": "Quantum Mentoring - 1:1 Mentoring to help you achive your goals",
+    "theme-color": "#ae9490"
 }
