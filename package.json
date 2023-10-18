@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",
+    "@fontsource/cormorant-garamond": "^5.0.8",
+    "@fontsource/puppies-play": "^5.0.15",
     "astro": "^3.2.4",
     "astro-compressor": "^0.4.1",
     "tailwindcss": "^3.0.24",
