@@ -5,5 +5,10 @@
     "short_name": "Quantum Mentoring",
     "categories": ["health", "lifestyle", "medical", "productivity"],
     "description": "Quantum Mentoring - 1:1 Mentoring to help you achive your goals",
-    "theme-color": "#ae9490"
+    "theme_color": "#ae9490",
+    "icons": [{
+        "src": "/favicon.webp",
+        "sizes": "280x280",
+        "type": "image/webp"
+    }]
 }
