@@ -1,15 +1,18 @@
 ---
 interface Props {
-    coversStyles: string;
-    sectionStyles: string;
+  coversStyles: string;
+  sectionStyles: string;
 }
 
-const {sectionStyles, coversStyles} = Astro.props;
+const { sectionStyles, coversStyles } = Astro.props;
 ---
+
 <section class={`${sectionStyles}`}>
-    <article class="absolute w-full h-full text-center text-white flex flex-col gap-10 justify-center items-center text-4xl sm:text-6xl lg:text-7xl italic px-5 sm:px-20 lg:px-32 xl:px-40 lg:font-bold">
-        <p>¿Tu corazón se enciende con esta propuesta?</p>
-        <p>¿Será esta la señal que le estabas pidiendo al Universo?</p>
-    </article>
-    <img class={`${coversStyles}`} src="/6.webp" alt="background cover">
+  <article
+    class="absolute w-full h-full text-center text-white flex flex-col gap-10 justify-center items-center text-4xl sm:text-6xl lg:text-7xl italic px-5 sm:px-20 lg:px-32 xl:px-40 lg:font-bold"
+  >
+    <p>¿Tu corazón se enciende con esta propuesta?</p>
+    <p>¿Será esta la señal que le estabas pidiendo al Universo?</p>
+  </article>
+  <img class={`${coversStyles}`} src="/6.webp" alt="background cover" />
 </section>

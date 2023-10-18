@@ -8,20 +8,26 @@ const { sectionStyles, coversStyles } = Astro.props;
 ---
 
 <section class={`${sectionStyles}`}>
-  <article class="absolute flex flex-col h-full w-full gap-8 sm:gap-16 py-8 sm:py-16 lg:py-24 px-5 sm:px-20 lg:px-32 xl:px-40 text-[#89674c] text-center text-2xl sm:text-3xl lg:text-4xl">
-    <h2 class="font-bold text-3xl sm:text-5xl lg:text-7xl">Sobre el Mentoring</h2>
+  <article
+    class="absolute flex flex-col h-full w-full gap-8 sm:gap-16 py-8 sm:py-16 lg:py-24 px-5 sm:px-20 lg:px-32 xl:px-40 text-[#89674c] text-center text-2xl sm:text-3xl lg:text-4xl"
+  >
+    <h2 class="font-bold text-3xl sm:text-5xl lg:text-7xl">
+      Sobre el Mentoring
+    </h2>
     <p>
       Es una mentoría que diseñaremos escuchando a tu cuerpo y tu energía en una
       sesión cero gratuita, donde nos conoceremos y charlaremos sobre ti y
       Quantum.
     </p>
     <p>
-      Allí diseñaremos el formato, la cantidad de encudntros, formas de pago y
+      Allí diseñaremos el formato, la cantidad de encuentros, formas de pago y
       valor económico del programa.
     </p>
-    <a class="underline underline-offset-2 text-xl sm:text-2xl lg:text-3xl xl:text-4xl  py-2 lg:py-4 px-6 lg:px-8 xl:py-5 xl:px-10 self-center border-[#513016] border-2 bg-[#513016]/30 text-white" href="https://calendly.com/belen-vitullo/claritycall"
-    target="_blank"
-      >Programá tu cita aquí</a
+    <a
+      class="underline underline-offset-2 text-xl sm:text-2xl lg:text-3xl xl:text-4xl py-2 lg:py-4 px-6 lg:px-8 xl:py-5 xl:px-10 self-center border-[#513016] border-2 bg-[#513016]/30 text-white"
+      href="https://calendly.com/belen-vitullo/claritycall"
+      target="_blank"
+      rel="noreferrer">Programá tu cita aquí</a
     >
   </article>
   <img class={`${coversStyles}`} src="/7.webp" alt="background cover" />

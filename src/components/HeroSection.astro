@@ -1,23 +1,45 @@
 ---
 interface Props {
-    coversStyles: string;
-    sectionStyles: string;
+  coversStyles: string;
+  sectionStyles: string;
 }
 
-const fadeAnimation = "animate-fade animate-duration-[1200ms] delay-300 animate-ease-in-out"
-const shakeAnimation = "animate-shake animate-duration-[1500ms] animate-ease-linear animate-fill-both"
+const fadeAnimation =
+  "animate-fade animate-duration-[1200ms] delay-300 animate-ease-in-out";
+const shakeAnimation =
+  "animate-shake animate-duration-[1500ms] animate-ease-linear animate-fill-both";
 
-const {coversStyles, sectionStyles} = Astro.props
+const { coversStyles, sectionStyles } = Astro.props;
 ---
 
 <section class={`text-white ${sectionStyles}`}>
-    <article class="absolute flex flex-col items-center h-full w-full justify-around px-5 sm:px-20 lg:px-32 xl:px-40">
-        <p class={`uppercase text-[1.3rem] font-[600] sm:text-2xl lg:text-4xl ${fadeAnimation}`}>Belen Vitullo</p>
-        <div class={`${fadeAnimation} xl:self-start`}>
-            <h1 class="text-[3rem] sm:text-[4.5rem] lg:text-8xl xl:text-[10rem] uppercase leading-9 sm:leading-[3.5rem] lg:leading-[4rem] xl:leading-[6rem]"><span class="font-secondary text-[8rem] sm:text-[10rem] lg:text-[15rem] xl:text-[25rem]">Q</span>uantum</h1>
-            <p class={`italic text-right mr-2 lg:mr-8 xl:mr-16 text-2xl sm:text-3xl lg:text-5xl xl:text-7xl leading-none ${shakeAnimation}`}>Mentoring 1:1</p>
-        </div>
-        <a class={`underline underline-offset-2 text-xl sm:text-2xl lg:text-3xl xl:text-4xl py-2 lg:py-4 px-6 lg:px-8 xl:py-5 xl:px-10 border-[#513016] border-2 bg-[#513016]/30 ${fadeAnimation}`} href="#learn-more">Learn more</a>
-    </article>
-    <img class={coversStyles} src="/1.webp" alt="hero section cover">
+  <article
+    class="absolute flex flex-col items-center h-full w-full justify-around px-5 sm:px-20 lg:px-32 xl:px-40"
+  >
+    <p
+      class={`uppercase text-[1.3rem] font-[600] sm:text-2xl lg:text-4xl ${fadeAnimation}`}
+    >
+      Belen Vitullo
+    </p>
+    <div class={`${fadeAnimation} xl:self-start`}>
+      <h1
+        class="text-[3rem] sm:text-[4.5rem] lg:text-8xl xl:text-[10rem] uppercase leading-9 sm:leading-[3.5rem] lg:leading-[4rem] xl:leading-[6rem]"
+      >
+        <span
+          class="font-secondary text-[8rem] sm:text-[10rem] lg:text-[15rem] xl:text-[25rem]"
+          >Q</span
+        >uantum
+      </h1>
+      <p
+        class={`italic text-right mr-2 lg:mr-8 xl:mr-16 text-2xl sm:text-3xl lg:text-5xl xl:text-7xl leading-none ${shakeAnimation}`}
+      >
+        Mentoring 1:1
+      </p>
+    </div>
+    <a
+      class={`underline underline-offset-2 text-xl sm:text-2xl lg:text-3xl xl:text-4xl py-2 lg:py-4 px-6 lg:px-8 xl:py-5 xl:px-10 border-[#513016] border-2 bg-[#513016]/30 ${fadeAnimation}`}
+      href="#learn-more">Learn more</a
+    >
+  </article>
+  <img class={coversStyles} src="/1.webp" alt="hero section cover" />
 </section>

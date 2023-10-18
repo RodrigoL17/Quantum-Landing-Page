@@ -1,32 +1,35 @@
 ---
 interface Props {
-    coversStyles: string;
-    sectionStyles: string;
+  coversStyles: string;
+  sectionStyles: string;
 }
 
-const {coversStyles, sectionStyles} = Astro.props
+const { coversStyles, sectionStyles } = Astro.props;
 ---
+
 <section class={`text-white ${sectionStyles}`}>
-    <article class="absolute flex flex-col h-full w-full px-5 sm:px-20 lg:px-32 xl:px-40 justify-around text-[1.3rem] sm:text-3xl lg:text-4xl text-center font-[600]">
-      <div class="flex flex-col gap-2 p-3 lg:p-6">
-        <p>¿Estás dispuesta a crear la vida exitosa que te gustaría?</p>
-        <p>
-          <span class="block">Por que lo que creaste hasta ahora esta bien, “alcanza”.</span
-          > Pero... sabes que hay algo en tu interior que te invita a ir por
-          más. Se siente la potencia de todo lo que está disponible para vos,
-          y no “sabes” cómo acceder.
-        </p>
-      </div>
-      <p class="p-3 lg:p-6 backdrop-blur-2xl border">
-        Este mentoring va a atravesar tu cuerpo y Ser con el objetivo de
-        liberararlos de todas las mentiras, autoboicot, excusas y
-        procastinación que te estas comprando para no hacerte cargo de tu
-        poder magnético y tu potencia.
+  <article
+    class="absolute flex flex-col h-full w-full px-5 sm:px-20 lg:px-32 xl:px-40 justify-around text-[1.3rem] sm:text-3xl lg:text-4xl text-center font-[600]"
+  >
+    <div class="flex flex-col gap-2 p-3 lg:p-6">
+      <p>¿Estás dispuesta a crear la vida exitosa que te gustaría?</p>
+      <p>
+        <span class="block"
+          >Porque lo que creaste hasta ahora está bien, "alcanza"</span
+        > Pero... sabes que hay algo en tu interior que te invita a ir por más.
+        Se siente la potencia de todo lo que está disponible para vos, y no
+        "sabes" cómo acceder.
       </p>
-    </article>
-    <img
-      class={`${coversStyles} bg-white/20`}
-      src="/2.webp"
-      alt="background cover"
-    />
-  </section>
+    </div>
+    <p class="p-3 lg:p-6 backdrop-blur-2xl border">
+      Este mentoring va a atravesar tu cuerpo y Ser con el objetivo de liberarte
+      de todas las mentiras, autoboicot, excusas y procrastinación que te estás
+      comprando para no hacerte cargo de tu poder magnético y tu potencia.
+    </p>
+  </article>
+  <img
+    class={`${coversStyles} bg-white/20`}
+    src="/2.webp"
+    alt="background cover"
+  />
+</section>
